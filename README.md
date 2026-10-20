@@ -57,21 +57,21 @@ Ikuti langkah-langkah berikut untuk menjalankan project ini di komputer lokal:
 
 ### 2. Install Dependensi PHP & JavaScript
 
-composer install
-npm install
-npm run build
+* composer install
+* npm install
+* npm run build
 
 ### 3. Konfigurasi Environment (.env)
 * Salin file konfigurasi bawaan:
 * copy .env.example .env
 * Buka file .env menggunakan text editor, lalu sesuaikan konfigurasi database kamu:
 * Cuplikan kode
-* DB_CONNECTION=mysql
-* DB_HOST=127.0.0.1
-* DB_PORT=3306
-* DB_DATABASE=spk_saw_gis
-* DB_USERNAME=root
-* DB_PASSWORD=
+*     DB_CONNECTION=mysql
+*     DB_HOST=127.0.0.1
+*     DB_PORT=3306
+*     DB_DATABASE=spk_saw_gis
+*     DB_USERNAME=root
+*     DB_PASSWORD=
 
 ### 4. Generate Application Key
 * php artisan key:generate
@@ -82,4 +82,4 @@ npm run build
 
 ### 6. Jalankan Server Lokal
 * php artisan serve
-* Aplikasi sekarang dapat diakses melalui browser di alamat: http://127.0.0.1:8000 atau http://localhost/spk-saw-gis/public/
+Aplikasi sekarang dapat diakses melalui browser di alamat: http://127.0.0.1:8000 atau http://localhost/spk-saw-gis/public/
