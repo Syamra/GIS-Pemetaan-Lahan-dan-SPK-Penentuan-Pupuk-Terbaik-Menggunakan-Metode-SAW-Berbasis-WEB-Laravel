@@ -55,13 +55,13 @@ Ikuti langkah-langkah berikut untuk menjalankan project ini di komputer lokal:
 * git clone [https://github.com/Syamra/GIS-Pemetaan-Lahan-dan-SPK-Penentuan-Pupuk-Terbaik-Menggunakan-Metode-SAW-Berbasis-WEB-Laravel.git](https://github.com/Syamra/GIS-Pemetaan-Lahan-dan-SPK-Penentuan-Pupuk-Terbaik-Menggunakan-Metode-SAW-Berbasis-WEB-Laravel.git) spk-saw-gis
 * cd spk-saw-gis
 
-* ** 2. Install Dependensi PHP & JavaScript
+### 2. Install Dependensi PHP & JavaScript
 
 composer install
 npm install
 npm run build
 
-* ** 3. Konfigurasi Environment (.env)
+### 3. Konfigurasi Environment (.env)
 * Salin file konfigurasi bawaan:
 * copy .env.example .env
 * Buka file .env menggunakan text editor, lalu sesuaikan konfigurasi database kamu:
@@ -73,13 +73,13 @@ npm run build
 * DB_USERNAME=root
 * DB_PASSWORD=
 
-* ** 4. Generate Application Key
+### 4. Generate Application Key
 * php artisan key:generate
 
-* ** 5. Jalankan Migrasi & Seeder Database
+### 5. Jalankan Migrasi & Seeder Database
 * Pastikan database spk_saw_gis sudah dibuat di phpMyAdmin / HeidiSQL, lalu jalankan:
 * php artisan migrate --seed
 
-* ** 6. Jalankan Server Lokal
+### 6. Jalankan Server Lokal
 * php artisan serve
 * Aplikasi sekarang dapat diakses melalui browser di alamat: http://127.0.0.1:8000 atau http://localhost/spk-saw-gis/public/
