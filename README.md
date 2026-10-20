@@ -45,3 +45,41 @@ Aplikasi ini membagi hak akses menjadi **3 entitas utama** sesuai dengan alur si
   * Dapat mengklik poligon lahan berwarna di atas peta untuk melihat *pop-up* informasi **Nama Pemilik**, **Luas Lahan**, dan **Rekomendasi Pupuk Terbaik** hasil analisis sistem.
 
 ---
+
+## 🛠️ 3. Cara Instalasi Aplikasi (Lokal / Laragon)
+
+Ikuti langkah-langkah berikut untuk menjalankan project ini di komputer lokal:
+
+### 1. Clone Repository
+* ** Buka terminal (Git Bash / Command Prompt) di direktori *web server* kamu (contoh: `C:\laragon\www`), lalu jalankan:
+* git clone [https://github.com/Syamra/GIS-Pemetaan-Lahan-dan-SPK-Penentuan-Pupuk-Terbaik-Menggunakan-Metode-SAW-Berbasis-WEB-Laravel.git](https://github.com/Syamra/GIS-Pemetaan-Lahan-dan-SPK-Penentuan-Pupuk-Terbaik-Menggunakan-Metode-SAW-Berbasis-WEB-Laravel.git) spk-saw-gis
+* cd spk-saw-gis
+
+* ** 2. Install Dependensi PHP & JavaScript
+
+composer install
+npm install
+npm run build
+
+* ** 3. Konfigurasi Environment (.env)
+* Salin file konfigurasi bawaan:
+* copy .env.example .env
+* Buka file .env menggunakan text editor, lalu sesuaikan konfigurasi database kamu:
+* Cuplikan kode
+* DB_CONNECTION=mysql
+* DB_HOST=127.0.0.1
+* DB_PORT=3306
+* DB_DATABASE=spk_saw_gis
+* DB_USERNAME=root
+* DB_PASSWORD=
+
+* ** 4. Generate Application Key
+* php artisan key:generate
+
+* ** 5. Jalankan Migrasi & Seeder Database
+* Pastikan database spk_saw_gis sudah dibuat di phpMyAdmin / HeidiSQL, lalu jalankan:
+* php artisan migrate --seed
+
+* ** 6. Jalankan Server Lokal
+* php artisan serve
+* Aplikasi sekarang dapat diakses melalui browser di alamat: http://127.0.0.1:8000 atau http://localhost/spk-saw-gis/public/
