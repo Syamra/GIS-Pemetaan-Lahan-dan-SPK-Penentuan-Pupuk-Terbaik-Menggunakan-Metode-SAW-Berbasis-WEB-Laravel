@@ -183,7 +183,7 @@
 
                 // Konten Popup
                 var popupContent = "<div style='min-width: 220px;'>";
-                popupContent += "<h5 class='font-weight-bold text-dark border-bottom pb-2 mb-2'>{{ $lahan->nama_lahan }}</h5>";
+                popupContent += "<h5 class='font-weight-bold text-dark border-bottom pb-2 mb-2'>{{ $lahan->pemilik->nama_pemilik }}</h5>";
                 popupContent += "<p class='mb-2'><b>Luas Area:</b> {{ $lahan->luas_lahan }} Ha</p>";
                 
                 @if($rekomendasi)

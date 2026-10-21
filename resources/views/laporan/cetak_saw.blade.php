@@ -38,7 +38,7 @@
 
     <div class="mb-4">
         <table>
-            <tr><td width="150"><b>Nama Lahan</b></td><td>: {{ $lahan->nama_lahan }}</td></tr>
+            <tr><td width="150"><b>Nama Pemilik</b></td><td>: {{ $lahan->pemilik->nama_pemilik }}</td></tr>
             <tr><td><b>Luas Lahan</b></td><td>: {{ $lahan->luas_lahan }} Ha</td></tr>
             <tr><td><b>Tanggal Cetak</b></td><td>: {{ date('d F Y') }}</td></tr>
         </table>

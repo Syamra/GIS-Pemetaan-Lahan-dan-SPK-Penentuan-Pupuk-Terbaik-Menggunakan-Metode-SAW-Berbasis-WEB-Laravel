@@ -41,6 +41,71 @@
         </div>
     @endif
 
+    <!-- PANDUAN SKALA NILAI -->
+    <div class="card border-0 shadow-sm mb-4" style="border-radius: 12px; border-left: 5px solid #17a2b8 !important;">
+        <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+                <i class="ti-info-alt text-info mr-2" style="font-size: 20px;"></i>
+                <h6 class="font-weight-bold text-dark mb-0">Panduan Pengisian Skala Nilai (1-5)</h6>
+            </div>
+            <div class="row">
+                <!-- C1: Jenis Tanah -->
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="bg-light p-3 rounded h-100">
+                        <strong class="text-dark d-block border-bottom pb-2 mb-2">C1 — Jenis Tanah</strong>
+                        <ul class="list-unstyled small mb-0 text-muted">
+                            <li class="mb-1"><span class="badge badge-success mr-1" style="width: 20px;">5</span> Sangat sesuai</li>
+                            <li class="mb-1"><span class="badge badge-primary mr-1" style="width: 20px;">4</span> Sesuai</li>
+                            <li class="mb-1"><span class="badge badge-info mr-1" style="width: 20px;">3</span> Cukup sesuai</li>
+                            <li class="mb-1"><span class="badge badge-warning mr-1" style="width: 20px;">2</span> Kurang sesuai</li>
+                            <li class="mb-0"><span class="badge badge-danger mr-1" style="width: 20px;">1</span> Tidak sesuai</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- C2: pH Tanah -->
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="bg-light p-3 rounded h-100">
+                        <strong class="text-dark d-block border-bottom pb-2 mb-2">C2 — pH Tanah</strong>
+                        <ul class="list-unstyled small mb-0 text-muted">
+                            <li class="mb-1"><span class="badge badge-success mr-1" style="width: 20px;">5</span> 5,5 – 6,5</li>
+                            <li class="mb-1"><span class="badge badge-primary mr-1" style="width: 20px;">4</span> 5,0 – 5,4</li>
+                            <li class="mb-1"><span class="badge badge-info mr-1" style="width: 20px;">3</span> 4,5 – 4,9</li>
+                            <li class="mb-1"><span class="badge badge-warning mr-1" style="width: 20px;">2</span> 4,0 – 4,4</li>
+                            <li class="mb-0"><span class="badge badge-danger mr-1" style="width: 20px;">1</span> &lt; 4,0 / &gt; 7,0</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- C3: Umur Tanaman -->
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="bg-light p-3 rounded h-100">
+                        <strong class="text-dark d-block border-bottom pb-2 mb-2">C3 — Umur Tanaman</strong>
+                        <ul class="list-unstyled small mb-0 text-muted">
+                            <li class="mb-1"><span class="badge badge-success mr-1" style="width: 20px;">5</span> 3 – 10 tahun</li>
+                            <li class="mb-1"><span class="badge badge-primary mr-1" style="width: 20px;">4</span> 11 – 15 tahun</li>
+                            <li class="mb-1"><span class="badge badge-info mr-1" style="width: 20px;">3</span> 16 – 20 tahun</li>
+                            <li class="mb-1"><span class="badge badge-warning mr-1" style="width: 20px;">2</span> 21 – 25 tahun</li>
+                            <li class="mb-0"><span class="badge badge-danger mr-1" style="width: 20px;">1</span> &gt; 25 tahun</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- C4: Harga Pupuk -->
+                <div class="col-md-3">
+                    <div class="bg-light p-3 rounded h-100">
+                        <strong class="text-dark d-block border-bottom pb-2 mb-2">C4 — Harga <span class="text-danger">(Cost)</span></strong>
+                        <ul class="list-unstyled small mb-0 text-muted">
+                            <li class="mb-1"><span class="badge badge-success mr-1" style="width: 20px;">5</span> &le; Rp100 Ribu</li>
+                            <li class="mb-1"><span class="badge badge-primary mr-1" style="width: 20px;">4</span> Rp100Rb – Rp300Rb</li>
+                            <li class="mb-1"><span class="badge badge-info mr-1" style="width: 20px;">3</span> Rp300Rb – Rp500Rb</li>
+                            <li class="mb-1"><span class="badge badge-warning mr-1" style="width: 20px;">2</span> Rp500Rb – Rp700Rb</li>
+                            <li class="mb-0"><span class="badge badge-danger mr-1" style="width: 20px;">1</span> &gt; Rp700 Ribu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PANDUAN SKALA NILAI -->
+
     <div class="card border-0 shadow-sm" style="border-radius: 12px; background-color: #ffffff;">
         <div class="card-header bg-white border-0 py-4" style="border-radius: 12px 12px 0 0;">
             <div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -135,7 +200,7 @@
             <div class="d-flex justify-content-between align-items-start flex-wrap mb-3">
                 <div>
                     <h4 class="font-weight-bold text-dark mb-1">Tahapan Perhitungan Metode SAW</h4>
-                    <p class="text-muted mb-0">Lahan: <strong>{{ $hasilSAW['nama_lahan'] }}</strong> · Dihitung: {{ $hasilSAW['waktu'] }}</p>
+                    <p class="text-muted mb-0">Lahan: <strong>{{ $hasilSAW['nama_lahan'] }}</strong> &middot; Dihitung: {{ $hasilSAW['waktu'] }}</p>
                 </div>
                 <span class="badge badge-success p-2 mt-2">Perhitungan berhasil</span>
             </div>
@@ -143,7 +208,7 @@
             <div class="card border-0 shadow-sm mb-4" style="border-radius: 10px;">
                 <div class="card-header bg-white py-3"><h6 class="font-weight-bold mb-0">Tahap 1 — Bobot dan atribut kriteria</h6></div>
                 <div class="card-body">
-                    <p class="text-muted">Bobot yang digunakan pada nilai preferensi mengikuti data kriteria yang tersimpan di sistem. Bobot desimal = bobot persen ÷ 100.</p>
+                    <p class="text-muted">Bobot yang digunakan pada nilai preferensi mengikuti data kriteria yang tersimpan di sistem. Bobot desimal = bobot persen &divide; 100.</p>
                     <div class="table-responsive">
                         <table class="table table-bordered table-sm mb-0">
                             <thead class="thead-light"><tr><th>Kode</th><th>Kriteria</th><th>Atribut</th><th class="text-right">Bobot (%)</th><th class="text-right">Bobot desimal</th><th>Rumus normalisasi</th></tr></thead>
@@ -214,7 +279,7 @@
                                                 $penyebut = $c['atribut'] === 'benefit' ? $pembanding : $nilaiX;
                                             @endphp
                                             <td>
-                                                <small class="text-muted">{{ $formatAngka($pembilang, 4) }} ÷ {{ $formatAngka($penyebut, 4) }}</small><br>
+                                                <small class="text-muted">{{ $formatAngka($pembilang, 4) }} &divide; {{ $formatAngka($penyebut, 4) }}</small><br>
                                                 <strong>{{ $formatAngka($hasilSAW['normalisasi'][$pupuk['id_pupuk']][$c['id_kriteria']], 4) }}</strong>
                                             </td>
                                         @endforeach
@@ -230,7 +295,7 @@
             <div class="card border-0 shadow-sm mb-4" style="border-radius: 10px;">
                 <div class="card-header bg-white py-3"><h6 class="font-weight-bold mb-0">Tahap 5 — Matriks normalisasi terbobot</h6></div>
                 <div class="card-body">
-                    <p class="text-muted mb-2">Setiap nilai normalisasi dikalikan dengan bobot desimal kriteria: <code>Yij = Rij × Wj</code>.</p>
+                    <p class="text-muted mb-2">Setiap nilai normalisasi dikalikan dengan bobot desimal kriteria: <code>Yij = Rij &times; Wj</code>.</p>
                     <div class="table-responsive">
                         <table class="table table-bordered table-sm text-center mb-0">
                             <thead class="thead-light"><tr><th>Alternatif</th>@foreach($hasilSAW['kriteria'] as $c)<th>{{ $c['kode'] }}<br><small>W={{ $formatAngka($c['bobot_desimal'], 4) }}</small></th>@endforeach</tr></thead>
@@ -240,7 +305,7 @@
                                         <th class="text-left">{{ $pupuk['kode'] }} - {{ $pupuk['nama_pupuk'] }}</th>
                                         @foreach($hasilSAW['kriteria'] as $c)
                                             <td>
-                                                <small class="text-muted">{{ $formatAngka($hasilSAW['normalisasi'][$pupuk['id_pupuk']][$c['id_kriteria']], 4) }} × {{ $formatAngka($c['bobot_desimal'], 4) }}</small><br>
+                                                <small class="text-muted">{{ $formatAngka($hasilSAW['normalisasi'][$pupuk['id_pupuk']][$c['id_kriteria']], 4) }} &times; {{ $formatAngka($c['bobot_desimal'], 4) }}</small><br>
                                                 <strong>{{ $formatAngka($hasilSAW['terbobot'][$pupuk['id_pupuk']][$c['id_kriteria']], 4) }}</strong>
                                             </td>
                                         @endforeach
@@ -255,11 +320,11 @@
             <div class="card border-0 shadow-sm mb-4" style="border-radius: 10px;">
                 <div class="card-header bg-white py-3"><h6 class="font-weight-bold mb-0">Tahap 6 — Nilai preferensi dan perangkingan</h6></div>
                 <div class="card-body">
-                    <p class="text-muted">Nilai akhir setiap alternatif dihitung dengan menjumlahkan seluruh nilai normalisasi terbobot: <code>Vi = Σ (Rij × Wj)</code>. Nilai terbesar menjadi peringkat pertama.</p>
+                    <p class="text-muted">Nilai akhir setiap alternatif dihitung dengan menjumlahkan seluruh nilai normalisasi terbobot: <code>Vi = &Sigma; (Rij &times; Wj)</code>. Nilai terbesar menjadi peringkat pertama.</p>
                     <div class="table-responsive">
                         <table class="table table-bordered table-sm mb-0">
                             <thead class="thead-light">
-                                <tr><th>Ranking</th><th>Alternatif pupuk</th>@foreach($hasilSAW['kriteria'] as $c)<th class="text-right">{{ $c['kode'] }} × W</th>@endforeach<th>Penjumlahan nilai terbobot</th><th class="text-right">Nilai preferensi (Vi)</th></tr>
+                                <tr><th>Ranking</th><th>Alternatif pupuk</th>@foreach($hasilSAW['kriteria'] as $c)<th class="text-right">{{ $c['kode'] }} &times; W</th>@endforeach<th>Penjumlahan nilai terbobot</th><th class="text-right">Nilai preferensi (Vi)</th></tr>
                             </thead>
                             <tbody>
                                 @foreach($hasilSAW['ranking'] as $r)

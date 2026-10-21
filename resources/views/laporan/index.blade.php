@@ -10,7 +10,7 @@
                 <table class="table mb-0">
                     <thead style="background-color: #f8f9fa;">
                         <tr>
-                            <th class="border-0 px-4 py-3">Nama Lahan</th>
+                            <th class="border-0 px-4 py-3">Nama Pemilik</th>
                             <th class="border-0 py-3">Luas Lahan</th>
                             <th class="border-0 py-3">Pupuk Terbaik (Peringkat 1)</th>
                             <th class="border-0 py-3 text-center">Aksi</th>
@@ -20,7 +20,7 @@
                         @forelse($lahans as $lahan)
                         @php $rekomendasi = $lahan->hasilSAW->first(); @endphp
                         <tr>
-                            <td class="px-4 py-3 font-weight-bold">{{ $lahan->nama_lahan }}</td>
+                            <td class="px-4 py-3 font-weight-bold">{{ $lahan->pemilik->nama_pemilik }}</td>
                             <td class="py-3">{{ $lahan->luas_lahan }} Ha</td>
                             <td class="py-3 text-success font-weight-bold">{{ $rekomendasi->pupuk->nama_pupuk ?? '-' }}</td>
                             <td class="py-3 text-center">

@@ -148,6 +148,7 @@
                 
                 var popupContent = "<div style='min-width: 160px;'>";
                 popupContent += "<small class='text-muted d-block mb-1'><i class='ti-user'></i> {{ $lahan->pemilik->nama_pemilik ?? 'Tanpa Pemilik' }}</small>";
+                popupContent += "<small class='text-muted'>Telp: {{ $lahan->pemilik->no_hp }} </small><hr class='my-2'>";
                 popupContent += "<small class='text-muted'>Luas: {{ $lahan->luas_lahan }} Ha</small><hr class='my-2'>";
                 
                 @if($rekomendasi)
